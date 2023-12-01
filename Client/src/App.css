@@ -1,0 +1,197 @@
+html {
+  scroll-behavior: smooth;
+}
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+/* Navbar styles */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0; /* Set the top offset to 0 when it becomes sticky */
+  z-index: 1020; /* Ensure it's above other items */
+  background-color: rgba(255, 255, 255, 0);
+}
+.navbar-scrolled {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Adjust transparency as needed */
+}
+
+.nav-logo {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Creates even spacing between the links */
+  
+}
+
+.nav-item {
+  padding: 5px 10px;
+}
+
+.nav-link {
+  color: #555;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #007bff;
+  background-color: #f8f9fa;
+}
+
+.highlight {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.highlight:hover,
+.highlight:focus {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Responsive navbar toggle */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 65px;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    transition: left 0.3s;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.hero {
+  height: 50vh;
+  background-image: url("/public/homePageBackGround3.jpg"),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: black;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background-color: #e57d7d;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.newsletter h2,
+.newsletter p {
+  color: #fff;
+}
+
+.btn-orange {
+  background-color: #e17055;
+  color: #fff;
+  border: none;
+}
+
+/* Adjust the button on hover */
+.btn-orange:hover {
+  background-color: #d65a31;
+}
+
+/* Resume Upload CTA Section */
+.resume-upload-cta {
+  background-color: #4c5c96; /* Fallback color */
+  background-blend-mode: multiply; /* Ensures text is readable on the background */
+  padding: 50px 0; /* Padding for spacing */
+}
+
+.resume-upload-cta h2 {
+  font-weight: bold;
+  margin-bottom: 20px; /* Spacing between title and button */
+}
+
+/* Button styling */
+.resume-upload-cta button {
+  border: none; /* Removes the button border */
+  padding: 10px 20px; /* Padding inside the button */
+  font-size: 1.2rem; /* Button text size */
+  font-weight: bold; /* Button text weight */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #5284a5;
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
