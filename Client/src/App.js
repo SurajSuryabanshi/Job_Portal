@@ -25,7 +25,11 @@ function App() {
         />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/post-a-job" element={<Postjob />} />
+        
+        <Route
+          path="/post-a-job"
+          element={isAuthenticated ? <Postjob /> : <Navigate to="/login-page" />}
+        />
         <Route path="/update/:id" element={<UpdateJob />} />
         <Route path="/login-page" element={<Loginpage />} />
         <Route path="/register" element={<Register />} />

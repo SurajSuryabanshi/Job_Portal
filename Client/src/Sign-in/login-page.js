@@ -33,8 +33,8 @@ function LoginPage() {
       // Call the login function to update authentication status
       login();
 
-      // Redirect to the home page or any other route upon successful login
-      navigate('/jobs');
+      
+      navigate('/');
     } catch (error) {
       console.error('Error logging in:', error.response?.data || error.message);
       // Set login error message

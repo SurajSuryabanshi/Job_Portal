@@ -20,25 +20,9 @@ function Home() {
             <input type="text" id="locationInput" className="form-control" placeholder="Location" />
             <input type="text" id="nameInput" className="form-control"  placeholder="Search by name" />
   
-            <select className="form-control" id="filterOptions">
-              <option value="">All Categories</option>
-              <option value="design">Design</option>
-              <option value="development">Development</option>
-              <option value="marketing">Marketing</option>
-            </select>
-            
-            <select className="form-control" id="sortOptions">
-              <option value="date">Date Posted</option>
-              <option value="relevance">Relevance</option>
-            </select>
-            
             <button className="btn btn-primary"  type="button">
               Search
             </button>
-          </div>
-  
-          <div id="suggestionsContainer" className="suggestions-container" style={{ display: 'none' }}>
-            {/* Suggestions will be populated here */}
           </div>
         </div>
       </div>
