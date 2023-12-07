@@ -13,20 +13,6 @@ function Home() {
           <Header />
     
           <section className="hero" style={{ backgroundImage: 'url(/homePageBackGround3.jpg)' }}>
-    <div className="container h-100">
-      <div className="row h-100 align-items-center">
-        <div className="col-12">
-          <div className="search-bar d-flex justify-content-center">
-            <input type="text" id="locationInput" className="form-control" placeholder="Location" />
-            <input type="text" id="nameInput" className="form-control"  placeholder="Search by name" />
-  
-            <button className="btn btn-primary"  type="button">
-              Search
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
   
     
